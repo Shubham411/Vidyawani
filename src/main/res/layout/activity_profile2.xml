@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile2">
+
+    <LinearLayout
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/mainlinear">
+
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroud_gradient"
+            android:layout_weight="1"
+            >
+        </ImageView>
+
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFF"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Enter Name"
+            />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Name"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Enter Email" />
+
+        <EditText
+            android:id="@+id/email"
+            android:inputType="textWebEmailAddress"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Email"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Enter Contact no." />
+
+        <EditText
+            android:id="@+id/phno"
+            android:inputType="phone"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Contact no."
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Enter Pasword" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Password"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Confirm Password" />
+
+        <EditText
+            android:id="@+id/repass"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Confirm Password"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_gradient"
+            android:layout_marginTop="40dp"
+            android:text="Send OTP"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Sign In"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/linear2"
+        android:layout_marginBottom="35dp"
+        />
+
+</RelativeLayout>
